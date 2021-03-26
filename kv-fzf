@@ -1,0 +1,10 @@
+#!/usr/bin/sh
+
+# Key-value FZF runner
+# $1 must be a shell variable declaration file. One var per line
+# Eg. var1="asjfdlk alkfdsj"
+
+input_file=$1
+choice=$(cat ${input_file} | cut --delimiter='=' --fields=1 | fzf)
+source $(realpath $input_file)
+eval 'echo $'"$choice"
