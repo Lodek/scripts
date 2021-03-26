@@ -1,0 +1,2 @@
+#!/bin/sh
+pickem_run ~/configs/pickem/commands.yml
