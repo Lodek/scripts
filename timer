@@ -1,2 +1,3 @@
 #!/usr/bin/sh
-sleep $(python -c "print($1 * 60)") && notify-send "Snap back to reality. $1 minutes have gone by"
+sleep $(python -c "print($1 * 60)") && notify-send --urgency=critical "Snap back to reality.
+$1 minutes have gone by"
