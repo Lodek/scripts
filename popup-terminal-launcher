@@ -1,0 +1,4 @@
+#!/usr/bin/sh
+# Receives the command to run as argument and launches an instance of urxvt
+# with the right xprop settings such that i3 will make it float
+urxvt -name "popup-terminal" -e $@
